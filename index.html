@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        var a,b,c;
+        c=a>b?a:a-2;//正确为a，错误为a-2
+        console.log(c);
+    </script>
+    <script>
+        for(let i = 0; i <= 100,val % 3==0; i++){
+    console.log(i);
+}
+    </script>
+    <script>
+        function myFunction(a, b) {
+            var a;
+            var b;   
+            return {a:b,b:a}
+}
+    myFunction(1,2 );
+    console.log(a,b)
+  </script>
+  <script>
+      function sumOfSquares(){
+          return a*b;
+
+  //补全
+
+}
+
+let res = sumOfSquares(11, 22);
+
+console.log(res);
+  
+  
+  </script>
+  <script>
+      const num = [['a', 0], ['b', 3],['c', 6],['d',9]] ,
+
+for(let i = 0;i<num.length;i++){
+    for(let j = 0;j<num[i].length;j++){
+        if(typeof(num[i][j]) == "number" && num[i][j] > 0){
+            list.push(num[i])
+        }
+    }
+}
+console.log(list);
+  
+  
+  
+  </script>
+    
+  
+
+<script>
+let pEle = document.getElementsByTagName('p');
+let classEle = getElementsByClassName('myClass');
+
+for(let i = 0;i<pEle.length;i++){
+	let myid = pEle[i].getAttribute('class') =='myId';
+	console.log(myid);
+}
+console.log(pEle);
+console.log(classEle)
+</script>
+
+<script>
+const arr = [1,1,1,2,2,3,4,4,5,5,5];
+function uniq(arr) {
+   let uniArr = []
+   for(let i = 0;i < arr.length; i++){
+	if(uniArr.indexOf(arr[i]) < 0){
+      uniArr.push(arr[i])
+    }
+   }
+  return uniArr;
+}
+console.log(uniq(arr));
+</script>
+
+<script>
+
+let arr = [5, 3, 8, 1];
+
+function filterRange(data,start,end){
+  let newData = [];
+  for(let i = 0;i < data.length;i++){
+  	if(data[i] >= start && data[i] <= end){
+      newData.push(data[i]);
+    }
+  }
+  return newData;
+}
+
+let filtered = filterRange(arr, 1, 4);
+alert( filtered ); // 3,1（匹配值）
+
+alert( arr ); // 5,3,8,1（未修改）
+</script>
+<script>
+
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users = [ john, pete, mary ];
+let usersMapped = users.map(item => {
+ return {
+  fullName:item.name +" " + item.surname,
+  id:item.id
+ }
+});
+</script>
+
+
+
+
+</body>
+</html>
